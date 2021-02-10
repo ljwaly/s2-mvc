@@ -9,6 +9,9 @@ import org.apache.catalina.webresources.StandardRoot;
 
 import java.io.File;
 
+/**
+ * 嵌入了一个内置tomcat
+ */
 public class SpringApplication {
     public static void main(String[] args) throws LifecycleException {
         run(SpringApplication.class, args);
