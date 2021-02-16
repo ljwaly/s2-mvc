@@ -1,4 +1,4 @@
-package com.ljw.spring.mvc.s2.mvc;
+package com.ljw.spring.mvc.s2.mvc.tomcat;
 
 import org.apache.catalina.LifecycleException;
 import org.apache.catalina.WebResourceRoot;
