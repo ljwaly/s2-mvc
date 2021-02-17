@@ -4,8 +4,17 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.*;
 import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
 
-@Configuration
-@EnableWebMvc
+/**
+ * 装配一些jsp的映射controller
+ *
+ * 这里装配之后，会影响普通的@Controller映射，
+ * 不共存
+ *
+ * 如果这里要启用，放开注解
+ *
+ */
+//@Configuration
+//@EnableWebMvc
 public class AppConfig implements WebMvcConfigurer {
 
     @Override
