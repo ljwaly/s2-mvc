@@ -23,7 +23,7 @@ import org.springframework.web.servlet.view.json.MappingJackson2JsonView;
  * ViewResolver
  *
  */
-//@Configuration
+@Configuration
 @EnableWebMvc
 public class AppConfig implements WebMvcConfigurer {
 
@@ -35,8 +35,8 @@ public class AppConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/view/ok").setViewName("ok");
-        registry.addViewController("/view/index").setViewName("index");
+        registry.addViewController("/view/ok").setViewName("ok");//SimpleUrlHandlerMapping
+        registry.addViewController("/view/index").setViewName("index");//SimpleUrlHandlerMapping
     }
 
     @Override
